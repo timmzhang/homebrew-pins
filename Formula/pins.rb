@@ -13,7 +13,9 @@ class Pins < Formula
   preserve_rpath
 
   def install
-    libexec.install Dir["*", ".[^.]*"]
+    libexec.install Dir["*"]
+    # Supply a top-level metafile so Homebrew keeps the complete bundle intact.
+    prefix.install_symlink libexec/"LICENSE"
     bin.install_symlink libexec/"pins"
   end
 
@@ -28,6 +30,9 @@ class Pins < Formula
   end
 
   test do
+    %w[README.md LICENSE CHANGELOG.md BUILD-INFO.json].each do |name|
+      assert_path_exists libexec/name
+    end
     assert_equal "Pins 0.1.0", shell_output("#{bin}/pins --version").strip
     ENV["PINS_DIR"] = testpath/"data"
     ENV["PINS_NO_LLM_TITLE"] = "1"
