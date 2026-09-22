@@ -4,7 +4,7 @@
 
 ## 当前状态
 
-**本分支仅供 Step 5 候选验收。** `pins_p-9fh7` 分支提供 `Formula/pins.rb`，指向 [917fdc7 候选包](https://github.com/timmzhang/pins-releases/releases/tag/v0.1.0-candidate.917fdc7)。默认 `main` 分支和正式 `v0.1.0` 安装入口尚未启用。
+**本分支仅供 Step 5 候选验收。** `pins_p-9fh7` 分支提供 `Formula/pins.rb`，指向 [917fdc7 候选包](https://github.com/timmzhang/pins-releases/releases/tag/v0.1.0-candidate.d6fadba)。默认 `main` 分支和正式 `v0.1.0` 安装入口尚未启用。
 
 ## 候选安装
 

@@ -2,9 +2,9 @@ class Pins < Formula
   desc "Persistent tasks shared across AI coding tools"
   homepage "https://github.com/timmzhang/pins-releases"
   # Step 5 candidate only; this branch is not the public stable tap.
-  url "https://github.com/timmzhang/pins-releases/releases/download/v0.1.0-candidate.917fdc7/pins-v0.1.0-macos-arm64.tar.gz"
+  url "https://github.com/timmzhang/pins-releases/releases/download/v0.1.0-candidate.d6fadba/pins-v0.1.0-macos-arm64.tar.gz"
   version "0.1.0"
-  sha256 "629f466d73a12da3d25415001a60df58221014430e9d2ccaf8c3f407e7a5deb5"
+  sha256 "1de252b0a569960eaca462f71a8ad885681f798a112360b66abc5a21803ba8d1"
   license :cannot_represent
 
   depends_on arch: :arm64
